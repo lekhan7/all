@@ -1,0 +1,43 @@
+body{
+    font-family: 'Courier New', Courier, monospace;
+
+}
+
+.color-picker-countainer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+
+}
+h1{
+    margin: 50px;
+    font-size: 3rem;
+}
+.colorp-dis{
+    width: 300PX;
+    height: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 5  px solid #a341be ;
+    border-radius: 25px;
+    margin-bottom: 25px;
+    transition: 1s ease;
+}
+.colorp-dis p{
+    color: black;
+    font-size: 2rem;
+    text-align: center;
+}
+label{
+    font-size: large;
+    font-weight: bold;
+    margin-bottom:10px;
+}
+input{
+width: 75px;
+height: 50px;
+padding: 4px;
+border-radius: 50px;
+}
