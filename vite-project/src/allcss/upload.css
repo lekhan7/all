@@ -1,0 +1,27 @@
+.maincontainer{
+    background-image: (linear-gradient(rgb(255, 196, 0),white));
+    
+}
+
+h1{
+    font-family: cursive;
+    font-size: xx-large;
+}
+input,select{
+    all: unset;
+    text-align: center;
+    border: 2px solid black;
+    height: 50px;
+    width: 50%;
+    font-size:x-large;
+    font-family: monospace;
+    font-weight: bolder;
+}
+button{
+    height: 30px;
+    width: 100px;
+    border: 2px solid orange;
+    background-color: blueviolet;
+    font-size: larger;
+    font-weight: bolder;
+}

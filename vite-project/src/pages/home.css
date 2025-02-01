@@ -1,0 +1,58 @@
+.carousel.fade .carousel-inner .carousel-item {
+  transition: opacity 0.2s ease-in-out;
+  color: black;
+}
+
+.carousel.fade .carousel-inner .carousel-item.active,
+.carousel.fade .carousel-inner .carousel-item-next,
+.carousel.fade .carousel-inner .carousel-item-prev {
+  opacity: 1;
+  color: black;
+}
+
+.carousel.fade .carousel-inner .carousel-item.active {
+  transition: opacity 0.2s ease-in-out;
+  color: black;
+}
+h3{
+  color: black;
+  font-size: xx-large;
+  font-weight: bolder;
+  
+}
+p{
+  font-size: xx-large;
+  font-weight: bolder;
+  color: black;
+}
+.carousel.fade .carousel-inner .carousel-item-next,
+.carousel.fade .carousel-inner .carousel-item-prev {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  color: black;
+}
+
+.carousel.fade .carousel-inner .carousel-item-next {
+  left: 0;
+  color: black;
+}
+
+.carousel.fade .carousel-inner .carousel-item-prev {
+  left: -100%;
+  color: black;
+}
+
+.carousel.fade .carousel-inner .carousel-item-next.carousel-item-left,
+.carousel.fade .carousel-inner .carousel-item-prev.carousel-item-right {
+  left: 0;
+  color: black;
+}
+
+.carousel.fade .carousel-inner .carousel-item-next.carousel-item-left.active,
+.carousel.fade .carousel-inner .carousel-item-prev.carousel-item-right.active {
+  left: 0;
+  opacity: 1;
+  color: black;
+  transition: opacity 0.2s ease-in-out;
+}
