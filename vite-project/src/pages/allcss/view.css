@@ -1,0 +1,42 @@
+.container-eg-btn-3 {
+  font-family: sans-serif;
+ 
+  margin: 0 auto 10px;
+
+  line-height: normal;
+}
+.container-eg-btn-3 .button {
+  color: #fff;
+  margin: 20px;
+  padding: 12px 15px;
+  text-align: center;
+  text-transform: uppercase;
+  position: relative;
+  transition: .3s;
+  z-index: 1;
+  background: #e65aa7;
+  cursor: pointer;
+  border-radius: 6px;
+}
+.container-eg-btn-3 .button-7:before {
+  pointer-events: none;
+  position: absolute;
+  z-index: -1;
+  content: "";
+  top: 100%;
+  left: 5%;
+  height: 10px;
+  width: 90%;
+  opacity: 0;
+  background: radial-gradient(ellipse at center, #000 0%, rgb(99 103 203 / 0%) 80%);
+  transition-duration: 0.3s;
+  transition-property: transform opacity;
+}
+.container-eg-btn-3 .button-7:hover{
+  background: #000;
+  transform: translateY(-5px);    
+}
+.container-eg-btn-3 .button-7:hover:before{
+  opacity: 1;
+  transform: translateY(5px);
+}

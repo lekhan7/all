@@ -1,0 +1,92 @@
+
+.lekahn{
+    position: relative;
+    left: 30%;
+
+}
+ 
+
+.container-eg-btn-1 {
+
+    font-family: sans-serif;
+    display: flex;
+    justify-content: space-between;
+
+   font-family: cursive;
+   font-size: xx-large;
+   font-weight: bolder;
+    flex-wrap: wrap;
+    margin: 0 auto 10px;
+    padding: .5em;
+    line-height: normal;
+  }
+  .container-eg-btn-1 .button {
+    all: unset;
+    color: #080808;
+    margin: 10px;
+    padding: 12px 15px;
+    text-align: center;
+    text-transform: uppercase;
+    position: relative;
+    overflow:hidden;
+    transition: .3s;
+    z-index: 1;
+    
+    cursor: pointer;
+  }
+  .container-eg-btn-1 .button:after {
+    position: absolute;
+    transition: .3s;
+    content: '';
+    width: 0;
+    left: 50%;
+    bottom: 0;
+    height: 4px;
+    background: #FF9800;
+  }
+  .container-eg-btn-1 .button-3:after {
+    right: 0;
+    left: auto;
+  }
+  .container-eg-btn-1 .button-1:hover:after, .container-eg-btn-1 .button-2:hover:after, .container-eg-btn-1 .button-3:hover:after {
+    width: 100%;
+    left: 0;
+  }
+  .admin-dashboard {
+    display: flex;
+    flex-direction: row;
+    height: 100vh;
+  }
+  
+  .sidebar {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    width: 200px;
+  }
+  
+  .main-content {
+    flex: 1;
+    padding: 20px;
+  }
+  
+  .slider {
+    margin-bottom: 20px;
+  }
+  
+  .cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  
+  .card {
+    background-color: #f7f7f7;
+    padding: 20px;
+    margin: 20px;
+    width: calc(33.33% - 20px);
+  }
+  
+  .charts {
+    margin-top: 20px;
+  }
