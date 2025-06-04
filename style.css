@@ -1,0 +1,183 @@
+body {
+    background-image: linear-gradient(rgb(255, 0, 76), rgb(0, 195, 255), rgb(143, 241, 77), orange);
+    animation: backanime ease-in-out 5s 10000000000000000000000000000000000000000000000000000000000000000000000000000000000000000;
+
+}
+
+@keyframes backanime {
+    100% {
+        background-image: linear-gradient(rgb(255, 0, 76), rgb(0, 195, 255), rgb(143, 241, 77), orange);
+    }
+
+    50% {
+        background-image: linear-gradient(rgb(247, 100, 144), rgb(38, 0, 255), rgb(90, 117, 236), rgb(255, 0, 0));
+
+    }
+
+    75% {
+        background-image: linear-gradient(rgb(223, 100, 247), rgb(255, 38, 0), rgb(90, 236, 109), rgb(255, 0, 0));
+
+    }
+}
+
+.expensescontainer {
+    background-color: rgba(252, 10, 83, 0.397);
+}
+
+.ammount {
+    all: unset;
+    height: fit-content;
+    width: fit-content;
+    color: white;
+    background-color: blueviolet;
+    border: 2px solid black;
+    font-size: x-large;
+    font-family: cursive;
+    font-weight: bolder;
+    margin: 10px;
+
+}
+
+.productName {
+    all: unset;
+    height: fit-content;
+    width: fit-content;
+    color: white;
+    background-color: blueviolet;
+    border: 2px solid black;
+    font-size: x-large;
+    font-family: cursive;
+    font-weight: bolder;
+    margin: 10px;
+}
+
+.productPrize {
+    all: unset;
+    height: fit-content;
+    width: fit-content;
+    color: white;
+    background-color: blueviolet;
+    border: 2px solid black;
+    font-size: x-large;
+    font-family: cursive;
+    font-weight: bolder;
+    margin: 10px;
+}
+
+.numberofpr {
+    all: unset;
+    height: fit-content;
+    width: fit-content;
+    color: white;
+    background-color: blueviolet;
+    border: 2px solid black;
+    font-size: x-large;
+    font-family: cursive;
+    font-weight: bolder;
+    margin: 10px;
+}
+
+.date {
+    all: unset;
+    height: fit-content;
+    width: fit-content;
+    color: white;
+    background-color: blueviolet;
+    border: 2px solid black;
+    font-size: x-large;
+    font-family: cursive;
+    font-weight: bolder;
+    margin: 10px;
+}
+
+button {
+    all: unset;
+    height: fit-content;
+    width: fit-content;
+    font-family: cursive;
+    font-size: larger;
+    font-weight: bolder;
+    font-style: italic;
+    text-align: center;
+    color: black;
+    border-radius: 20px;
+    border: 2px solid black;
+    background-color: rgb(240, 80, 255);
+
+}
+
+.avbalance,
+.distotalprice {
+    font-family: 'Courier New', Courier, monospace;
+    font-size: xx-large;
+    font-weight: bolder;
+    display: inline;
+    border-radius: 20px;
+}
+
+.headdate {
+
+    border: 2px solid black;
+    text-align: center;
+    font-size: larger;
+    font-family: cursive;
+    font-size: larger;
+
+}
+
+.head {
+
+    border: 2px solid black;
+    text-align: center;
+    font-size: larger;
+    font-family: cursive;
+    font-size: larger;
+
+}
+
+.headprize {
+
+    border: 2px solid black;
+    text-align: center;
+    font-size: larger;
+    font-family: cursive;
+    font-size: larger;
+
+}
+
+.headno {
+
+    border: 2px solid black;
+    text-align: center;
+    font-size: larger;
+    font-family: cursive;
+    font-size: larger;
+
+}
+
+td {
+    border: 2px solid black;
+    border-radius: 20px;
+    font-family: cursive;
+    font-size: larger;
+    font-weight: bold;
+}
+
+label {
+    font-family: cursive;
+    font-size: large;
+    font-weight: 900;
+}
+
+.months {
+    display: inline;
+
+}
+
+.totalexmo {
+    display: inline;
+    margin-left: 900px;
+    font-family: cursive;
+    font-size: larger;
+    font-weight: bold;
+}
