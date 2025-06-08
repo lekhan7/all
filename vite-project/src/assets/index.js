@@ -20,12 +20,21 @@ import redux from "./tech/redux.png";
 import tailwind from "./tech/tailwind.png";
 import typescript from "./tech/typescript.png";
 import threejs from "./tech/threejs.svg";
+import Screenshot  from "./tech/Screenshot (69).png"
+import Screenshot2  from "./tech/Screenshot (77).png"
+import Screenshot3  from "./tech/Screenshot (78).png"
+import Screenshot4  from "./tech/Screenshot (79).png"
+import Screenshot5  from "./tech/Screenshot (80).png"
+
+
 
 import meta from "./company/meta.png";
 import shopify from "./company/shopify.png";
 import starbucks from "./company/starbucks.png";
 import tesla from "./company/tesla.png";
-
+import hackthon from "./company/hackthon.png"
+import unifiedi from "./company/unifiedi.png"
+import nullclass from "./company/nullclass.png"
 import carrent from "./carrent.png";
 import jobit from "./jobit.png";
 import tripguide from "./tripguide.png";
@@ -44,6 +53,9 @@ export {
   figma,
   git,
   html,
+  hackthon,
+  unifiedi,
+  nullclass,
   javascript,
   mongodb,
   nodejs,
@@ -59,4 +71,9 @@ export {
   carrent,
   jobit,
   tripguide,
+  Screenshot,
+   Screenshot2,
+    Screenshot3,
+     Screenshot4,
+      Screenshot5,
 };

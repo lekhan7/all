@@ -15,14 +15,18 @@ import {
   git,
   figma,
   docker,
-  meta,
-  starbucks,
-  tesla,
-  shopify,
+  unifiedi,
+  hackthon,
+  nullclass,
   carrent,
   jobit,
+  Screenshot,
   tripguide,
   threejs,
+  Screenshot2,
+    Screenshot3,
+     Screenshot4,
+      Screenshot5,
 } from "../assets";
 
 export const navLinks = [
@@ -46,7 +50,7 @@ const services = [
     icon: web,
   },
   {
-    title: "React Native Developer",
+    title: "Vite- React Developer",
     icon: mobile,
   },
   {
@@ -54,7 +58,7 @@ const services = [
     icon: backend,
   },
   {
-    title: "Content Creator",
+    title: "Nextjs Developer",
     icon: creator,
   },
 ];
@@ -72,10 +76,7 @@ const technologies = [
     name: "JavaScript",
     icon: javascript,
   },
-  {
-    name: "TypeScript",
-    icon: typescript,
-  },
+
   {
     name: "React JS",
     icon: reactjs,
@@ -104,75 +105,52 @@ const technologies = [
     name: "git",
     icon: git,
   },
-  {
-    name: "figma",
-    icon: figma,
-  },
-  {
-    name: "docker",
-    icon: docker,
-  },
+
+  
 ];
 
 const experiences = [
   {
-    title: "React.js Developer",
-    company_name: "Starbucks",
-    icon: starbucks,
+    title: "Intern",
+    company_name: "Unified Mentores",
+    icon: unifiedi,
     iconBg: "#383E56",
-    date: "March 2020 - April 2021",
+    date: "January 2025 - June 2025",
     points: [
       "Developing and maintaining web applications using React.js and other related technologies.",
-      "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
       "Implementing responsive design and ensuring cross-browser compatibility.",
       "Participating in code reviews and providing constructive feedback to other developers.",
     ],
   },
   {
-    title: "React Native Developer",
-    company_name: "Tesla",
-    icon: tesla,
+    title: "Hackthons",
+    company_name: "Hackthon",
+    icon: hackthon,
     iconBg: "#E6DEDD",
-    date: "Jan 2021 - Feb 2022",
+    date: "Nov 2024 - Till Date  ",
     points: [
-      "Developing and maintaining web applications using React.js and other related technologies.",
-      "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-      "Implementing responsive design and ensuring cross-browser compatibility.",
-      "Participating in code reviews and providing constructive feedback to other developers.",
+      "Developing  web applications in 24 or 48 hours using React.js and other related technologies.",
+    "Presenting Your application to judegs ",
+    "Meating Ppeople with same mentality ", 
     ],
   },
   {
-    title: "Web Developer",
-    company_name: "Shopify",
-    icon: shopify,
+    title: "Intern",
+    company_name: "NullClass",
+    icon: nullclass,
     iconBg: "#383E56",
-    date: "Jan 2022 - Jan 2023",
+    date: "Jan 2025 - Jun 2025",
     points: [
-      "Developing and maintaining web applications using React.js and other related technologies.",
-      "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-      "Implementing responsive design and ensuring cross-browser compatibility.",
-      "Participating in code reviews and providing constructive feedback to other developers.",
-    ],
+      "Developing and maintaining Redbus application using React.js and other related technologies.",
+         ],
   },
-  {
-    title: "Full stack Developer",
-    company_name: "Meta",
-    icon: meta,
-    iconBg: "#E6DEDD",
-    date: "Jan 2023 - Present",
-    points: [
-      "Developing and maintaining web applications using React.js and other related technologies.",
-      "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-      "Implementing responsive design and ensuring cross-browser compatibility.",
-      "Participating in code reviews and providing constructive feedback to other developers.",
-    ],
-  },
+
 ];
 
 const testimonials = [
   {
     testimonial:
-      "I thought it was impossible to make a website as beautiful as our product, but Rick proved me wrong.",
+      "I thought it was impossible to make a website as beautiful as our product, but React js  proved me wrong.",
     name: "Sara Lee",
     designation: "CFO",
     company: "Acme Co",
@@ -180,7 +158,7 @@ const testimonials = [
   },
   {
     testimonial:
-      "I've never met a web developer who truly cares about their clients' success like Rick does.",
+      "I've never met a web developer who truly cares about their clients'Haaa just kidding😁",
     name: "Chris Brown",
     designation: "COO",
     company: "DEF Corp",
@@ -188,7 +166,7 @@ const testimonials = [
   },
   {
     testimonial:
-      "After Rick optimized our website, our traffic increased by 50%. We can't thank them enough!",
+      "After Nodejs  optimized our website, our traffic increased by 50%. We can't thank them enough!",
     name: "Lisa Wang",
     designation: "CTO",
     company: "456 Enterprises",
@@ -198,9 +176,9 @@ const testimonials = [
 
 const projects = [
   {
-    name: "Car Rent",
+    name: "Sporlod",
     description:
-      "Web-based platform that allows users to search, book, and manage car rentals from various providers, providing a convenient and efficient solution for transportation needs.",
+      "Web-based platform that allows users  search the sports event s in near there locations and add sports events for the event managers ",
     tags: [
       {
         name: "react",
@@ -215,41 +193,84 @@ const projects = [
         color: "pink-text-gradient",
       },
     ],
-    image: carrent,
-    source_code_link: "https://github.com/",
+    image: Screenshot3,
+    source_code_link: "https://github.com/lekhan7/all",
   },
   {
-    name: "Job IT",
+    name: "BBI",
     description:
-      "Web application that enables users to search for job openings, view estimated salary ranges for positions, and locate available jobs based on their current location.",
+      "Web application that enables users  see business ideas and helps investers to invest and it also provedies business advisores to post there reqirements and bankers to get banking helps ",
     tags: [
       {
         name: "react",
         color: "blue-text-gradient",
       },
-      {
-        name: "restapi",
-        color: "green-text-gradient",
+{
+        name: "firebase",
+        color: "white-text-gradient",
       },
       {
-        name: "scss",
+        name: "css",
         color: "pink-text-gradient",
       },
     ],
-    image: jobit,
-    source_code_link: "https://github.com/",
+    image: Screenshot5,
+    source_code_link: "https://github.com/lekhan7/all",
   },
-  {
-    name: "Trip Guide",
+
+{
+    name: "College Event ",
     description:
-      "A comprehensive travel booking platform that allows users to book flights, hotels, and rental cars, and offers curated recommendations for popular destinations.",
+      "Web application that enables College studentes to appli for the college events   ",
     tags: [
       {
-        name: "nextjs",
+        name: "react",
+        color: "blue-text-gradient",
+      },
+{
+        name: "firebase",
+        color: "white-text-gradient",
+      },
+      {
+        name: "tailwind css",
+        color: "pink-text-gradient",
+      },
+    ],
+    image: Screenshot,
+    source_code_link: "https://github.com/lekhan7/all",
+  },
+  {
+    name: "Doc keeper  ",
+    description:
+      "Web application that enables people to secure their gov documenyts in the easy way and use to sare upload any where    ",
+    tags: [
+      {
+        name: "react",
+        color: "blue-text-gradient",
+      },
+{
+        name: "firebase",
+        color: "white-text-gradient",
+      },
+      {
+        name: "tailwind css",
+        color: "pink-text-gradient",
+      },
+    ],
+    image: Screenshot2,
+    source_code_link: "https://github.com/lekhan7/all",
+  },
+  {
+    name: "care  Guide",
+    description:
+      "A web app enable students to find best college and aso helps the colleges to select well knowldege students  by a apptitude test and the pervious grade marks ",
+    tags: [
+      {
+        name: "reactjs",
         color: "blue-text-gradient",
       },
       {
-        name: "supabase",
+        name: "mongodb",
         color: "green-text-gradient",
       },
       {
@@ -257,8 +278,8 @@ const projects = [
         color: "pink-text-gradient",
       },
     ],
-    image: tripguide,
-    source_code_link: "https://github.com/",
+    image: Screenshot4,
+    source_code_link: "https://github.com/lekhan7/all",
   },
 ];
 
