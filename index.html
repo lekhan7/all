@@ -9,60 +9,67 @@
 </head>
 
 <body>
+    <h1 style="text-align: center; font-family: 'Segoe UI', sans-serif; font-size: 3rem; font-weight: bold; color: white; margin-bottom: 2rem; text-shadow: 2px 2px 8px rgba(0,0,0,0.6);">
+    💸 Expense Tracker Dashboard
+</h1>
+
     <div class="expensescontainer">
-        <label>AVAILABLE AMMOUNT</label><input class="ammount" type="number"> <br>
+        <label>AVAILABLE AMOUNT</label>
+        <input class="ammount" type="number">
 
-        <table>
-            <tr>
+        <label>DATE</label>
+        <input type="date" min="2025-01-01" class="date">
 
+        <label>PRODUCT NAME</label>
+        <input class="productName" type="text">
 
-                <label>DATE</label> <input type="date" min="2025-01-01" class="date"><br>
-                <label>PRODUCT NAME</label> <input class="productName" type="comment"><br>
+        <label>PRICE OF THE PRODUCT</label>
+        <input type="number" class="productPrize">
 
+        <label>NUMBER OF THE PRODUCT</label>
+        <input type="number" class="numberofpr">
 
-                <label>PRIZE OF THE PRODUCT</label> <input type="number" class="productPrize"><br>
-                <label> NUMBER OF THE PRODUCT</label> <input type="number" class="numberofpr"><br>
+        <label>AVAILABLE BALANCE:</label>
+        <input class="avbalance" type="text" readonly>
 
+        <button class="totalprize">TOTAL PRICE</button>
+        <button class="totoalexpenses">TOTAL EXPENSES</button>
 
+        <label>TOTAL PRICE:</label>
+        <input class="distotalprice" type="text" readonly>
+
+        <div style="overflow-x: auto;">
+            <table class="expensestable">
+                <thead>
+                    <tr>
+                        <th class="headdate">DATE</th>
+                        <th class="head name">NAME OF THE PRODUCT</th>
+                        <th class="headprize">PRICE</th>
+                        <th class="headno">NO OF PRODUCTS</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr class="allrow">
+                        <td class="tabledataname"></td>
+                        <td class="tabledataprize"></td>
+                        <td class="tabledatano"></td>
+                        <td></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <button class="addtabledata">ADD</button>
+        <button class="check">ADD ALL TO THE DATABASE</button>
+
+        <br><br>
+        <h3 class="months">MONTHS</h3>
+        <h3 class="totalexmo">TOTAL EXPENSES PER MONTH</h3>
     </div>
 
-    <label class="nameav">AVAILABLE BLANCE : </label>
-    <div class="avbalance" type="number"> </div><br>
-
-    <button class="totalprize">TOTAL PRICW</button>
-    <button class="totoalexpenses">TOTAL EXPENSES</button><br>
-
-    <label>TOTAL PRICE :</label>
-    <div class="distotalprice"></div>
-    </tr>
-    </table>
-
-    <table class="expensestable">
-        <tr class="rowname">
-            <th class="headdate">DATE</th>
-            <th class="head name">NAME OF THE PRODUCT</th>
-            <th class="headprize">PRIZE</th>
-            <th class="headno">NO OF PRO</th>
-        <tr class="allrow">
-            <td class="tabledataname">
-
-            </td>
-            <td class="tabledataprize">
-
-            </td>
-            <td class="tabledatano">
-
-            </td>
-        </tr>
-        </tr>
-
-
-    </table>
-    <button class="addtabledata">ADD</button>
-    <button class="check">ADD ALL TO THE DATABASE</button>
+    <!-- Optional: Link to JS file -->
+ 
 </body><br>
-<h3 class="months">MONTHS</h3>
-<h3 class="totalexmo">TOTAL EXPENSES PER MONTHS</h3>
 <script src="script.js">
 
 </script>
