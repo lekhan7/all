@@ -1,25 +1,46 @@
-const  express =require("express");
-const path = require ("path");
+const express = require('express');
+const http = require('http');
+const { Server } = require('socket.io');
+const path = require('path');
+
 const app = express();
-const server = require ("http").createServer(app);
-const port =5000
+const server = http.createServer(app);
+const io = new Server(server);
 
-const io = require("socket.io")(server);
+app.use(express.static('public'));
 
+io.on('connection', (socket) => {
+  console.log('User connected');
 
+  socket.on('join room', ({ username, room }) => {
+    socket.join(room);
+    socket.username = username;
+    socket.room = room;
 
-app .use(express.static(path.join(__dirname+"/public")));
- io.on("connection",function(socket){
-  socket.on("newuser",function(username){
-    socket.broadcast.emit("update",username+"joined the conversation ");
+    socket.to(room).emit('chat message', {
+      user: 'System',
+      text: `${username} has joined the room.`,
+    });
   });
-  socket.on("exituser",function(username){
-    socket.broadcast.emit("update",username+"left the conversation ");
+
+  socket.on('chat message', (msg) => {
+    io.to(socket.room).emit('chat message', {
+      user: socket.username,
+      text: msg,
+    });
   });
-  socket.on("chat",function(message){
-    socket.broadcast.emit("chat",message );
+
+  socket.on('disconnect', () => {
+    if (socket.room && socket.username) {
+      socket.to(socket.room).emit('chat message', {
+        user: 'System',
+        text: `${socket.username} has left the chat.`,
+      });
+    }
   });
- });
-server.listen(5000, () => {
-    console.log(`Example app listening on port ${port}`)
-  })
+});
+
+const PORT = 3000;
+server.listen(PORT, () => {
+  console.log(`Server running at http://localhost:${PORT}`);
+});
