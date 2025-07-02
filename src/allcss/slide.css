@@ -1,0 +1,12 @@
+.nav{
+    all: unset;
+    font-family: coursive;
+    font-size: x-large;
+    font-weight: bold;
+    cursor: pointer;
+}
+.img{
+    height: 50px;
+    width: 50px;
+    border-radius: 50px;
+}

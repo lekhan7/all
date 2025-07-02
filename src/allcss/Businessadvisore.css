@@ -1,0 +1,112 @@
+body{
+    background-color: rgba(137, 43, 226, 0.356);
+}
+.divs{
+  background-color: rgba(75, 73, 73, 0.63);
+    display: flexbox;
+height: 500px;
+width: 230px;
+    /* justify-content: start;
+    align-content: center; */
+}
+
+.link1{
+    all: unset;
+    border-bottom: 2px solid black;
+    border-radius: 36px;
+    position: absolute;
+   padding: 5px;
+margin-top: 10px;
+cursor: pointer;
+background-image: linear-gradient(rgb(236, 53, 99),rgb(92, 92, 250));
+ 
+    transition: all 0.3s ease-in-out;
+}
+
+.link1:hover{
+   box-shadow: 0px 0px 10px rgba(0,0,0,0.5);
+    animation: bounce 1s ;
+}
+
+.link2{
+       all: unset;
+    border-bottom: 2px solid black;
+    border-radius: 36px;
+    position: absolute;
+    padding: 5px;
+background-image: linear-gradient(rgb(236, 53, 99),rgb(92, 92, 250));
+    margin-top: 40px;
+   cursor: pointer;
+    transition: all 0.3s ease-in-out;
+}
+
+.link2:hover{
+ box-shadow: 0px 0px 10px rgba(0,0,0,0.5);
+    animation: bounce 1s ;
+}
+
+.link3{
+    all: unset;
+ border-bottom: 2px solid black;
+ border-radius: 36px;
+ position: absolute;
+ padding: 5px;
+background-image: linear-gradient(rgb(236, 53, 99),rgb(92, 92, 250));
+ margin-top: 100px;
+cursor: pointer;
+    transition: all 0.3s ease-in-out;
+}
+
+.link3:hover{
+    box-shadow: 0px 0px 10px rgba(0,0,0,0.5);
+    animation: bounce 1s ;
+}
+
+.link4{
+    all: unset;
+ border-bottom: 2px solid black;
+ border-radius: 36px;
+ position:absolute;
+ padding: 5px;
+background-image: linear-gradient(rgb(236, 53, 99),rgb(92, 92, 250));
+ margin-top: 130px;
+cursor: pointer;
+    transition: all 0.3s ease-in-out;
+}
+
+.link4:hover{
+   box-shadow: 0px 0px 10px rgba(0,0,0,0.5);
+    animation: bounce 1s ;
+}
+
+.link5{
+    all: unset;
+ border-bottom: 2px solid black;
+ border-radius: 36px;
+ position:absolute;
+ padding: 5px;
+background-image: linear-gradient(rgb(236, 53, 99),rgb(92, 92, 250));
+ margin-top: 190px;
+cursor: pointer;
+    transition: all 0.3s ease-in-out;
+}
+
+.link5:hover{
+   box-shadow: 0px 0px 10px rgba(0,0,0,0.5);
+    animation: bounce 1s ;
+}
+
+
+
+
+@keyframes bounce {
+    0% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-10px);
+    }
+    100% {
+        transform: translateY(0);
+    }
+}

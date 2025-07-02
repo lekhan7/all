@@ -1,0 +1,62 @@
+import React, { useState,useEffect } from 'react';
+import { useNavigate } from 'react-router-dom'; 
+import Form from 'react-bootstrap/Form';
+import "bootstrap/dist/css/bootstrap.min.css";
+import FloatingLabel from 'react-bootstrap/FloatingLabel';
+import { Button } from 'bootstrap';
+import { useFirebase } from '../../context/Firebase';
+
+function Register() {
+    const [email, setEmail] = useState('');
+    const [password, setPassword] = useState('password');
+   
+    const firebase = useFirebase();
+    const navigate = useNavigate(); 
+    useEffect(() => {
+      if (firebase.isLoggedIn) {
+        navigate("/login");
+      }
+    }, [firebase, navigate]);
+  
+  
+    const handleSubmit = async (e) => {
+        e.preventDefault();
+        const result = await firebase.signupUserWithEmailAndPassword(email, password);
+        alert("registering the user")
+        navigate("/login");
+        console.log(result);
+
+    }
+    const togglePasswordVisibility = () => {
+        setPassword(prevType => (prevType === 'password' ? 'text' : 'password'));
+    };
+
+    return (
+        <div className='container m-5'>
+            <FloatingLabel controlId="floatingInput" label="Email address" className="mb-3">
+                <Form.Control 
+                    onChange={(e) => setEmail(e.target.value)} 
+                    type="email" 
+                    placeholder="name@example.com" 
+                />
+            </FloatingLabel>
+
+            <Form.Label htmlFor="inputPassword5">Password</Form.Label>
+            <Form.Control
+                onChange={(e) => setPassword(e.target.value)}
+                type={password}
+                id="inputPassword5"
+                aria-describedby="passwordHelpBlock"
+            />
+        
+            
+            <button onClick={togglePasswordVisibility}>
+                {password === 'password' ? 'Show Password' : 'Hide Password'}
+            </button>
+            
+            <button onClick={handleSubmit}>Submit</button>
+        </div>
+    );
+}
+
+export default Register;

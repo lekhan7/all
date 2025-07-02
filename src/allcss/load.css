@@ -1,0 +1,22 @@
+
+.loadde{
+    font-size: 36px;
+    font-weight: bold;
+    color: #333;
+    white-space: nowrap;
+    overflow: hidden;
+    width: 0;
+    animation: typing 1s  steps(40, end) infinite;
+    animation-fill-mode: forwards;
+  }
+  
+  @keyframes typing {
+    from {
+      width: 0;
+    }
+    to {
+      width: 100%;
+      
+    }
+  }
+  

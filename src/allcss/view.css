@@ -1,0 +1,39 @@
+.alldives{
+  
+    font-family: cursive;
+    font-size: large;
+    font-weight: bold;
+}
+.ineerdiv{
+    background-image: linear-gradient(hsl(273, 100%, 72%),rgb(252, 158, 95));
+    display: inline-block;
+    border: 4px solid  black ;
+position: relative;
+    left: 40px;
+
+}
+.ineerdiv:hover{
+   animation: hove 1s ;
+}
+@keyframes hove {
+    0% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-10px);
+    }
+    100% {
+        transform: translateY(0);
+    }
+}
+.ineerdiv>h2{
+    font-family: 'Gill Sans', 'Gill Sans MT', 'Trebuchet MS', sans-serif;
+    font-size: xx-large;
+    font-weight: bolder;
+
+}
+button{
+    background-color: rgb(29, 188, 228);
+    border-radius: 30px;
+    align-content: center;
+}
