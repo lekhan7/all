@@ -1,0 +1,232 @@
+/* Reset & Global Styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+/* Animated Background */
+body {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  background: linear-gradient(-45deg, #ff6ec4, #7873f5, #47e5bc, #f6f578);
+  background-size: 400% 400%;
+  animation: gradientBG 10s ease infinite;
+}
+
+/* Background Animation */
+@keyframes gradientBG {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+/* Heading */
+.head {
+  font-size: 3rem;
+  text-align: center;
+  margin-bottom: 30px;
+  background: linear-gradient(to right, #ffe53bd8, #ff2525d8);
+  -webkit-background-clip: text;
+  color: transparent;
+}
+
+/* Input Section */
+.main {
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 20px;
+  padding: 30px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+  backdrop-filter: blur(10px);
+  max-width: 600px;
+  width: 100%;
+  text-align: center;
+}
+
+/* Inputs */
+input[type=number] {
+  width: 70px;
+  height: 50px;
+  margin: 10px 5px;
+  padding: 5px;
+  font-size: 1.5rem;
+  font-weight: bold;
+  text-align: center;
+  border: 2px solid #fff;
+  border-radius: 10px;
+  background: linear-gradient(to right, #00f2fe, #4facfe);
+  color: #000;
+}
+
+/* Remove Spinner Arrows */
+input[type=number]::-webkit-inner-spin-button, 
+input[type=number]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+input[type=number] {
+  -moz-appearance: textfield;
+  appearance: textfield;
+}
+.timesup {
+  font-size: 2rem;
+  color: #fff;
+  margin-top: 20px;
+  padding: 20px;
+  border-radius: 15px;
+  font-weight: bold;
+  background: linear-gradient(135deg, #ff416c, #ff4b2b);
+  box-shadow: 0 0 15px #ff4b2b;
+  animation: pulseGlow 1.2s infinite, shake 0.4s infinite;
+  text-shadow: 2px 2px 4px #000;
+}
+
+/* Glowing pulse */
+@keyframes pulseGlow {
+  0% {
+    box-shadow: 0 0 10px #ff416c;
+  }
+  50% {
+    box-shadow: 0 0 20px #ff4b2b, 0 0 30px #ff4b2b;
+  }
+  100% {
+    box-shadow: 0 0 10px #ff416c;
+  }
+}
+
+/* Slight shake effect */
+@keyframes shake {
+  0%, 100% { transform: translateX(0); }
+  25% { transform: translateX(-3px); }
+  50% { transform: translateX(3px); }
+  75% { transform: translateX(-2px); }
+}
+
+/* Countdown Display Blocks */
+.cdays, .chours, .cminutes, .cseconds {
+  display: inline-block;
+  padding: 12px 20px;
+  margin: 10px 5px;
+  font-size: 2rem;
+  font-weight: bold;
+  border-radius: 10px;
+  background-image: linear-gradient(135deg, #ff758c 0%, #ff7eb3 100%);
+  color: white;
+}
+
+/* Buttons */
+button {
+  all: unset;
+  font-size: 1.2rem;
+  font-weight: bold;
+  padding: 10px 25px;
+  margin: 15px 10px;
+  border-radius: 50px;
+  cursor: pointer;
+  transition: 0.3s ease;
+  border: 2px solid white;
+  text-align: center;
+}
+
+/* Individual Button Colors */
+.start {
+  background-color: #00f2fe;
+}
+.pause {
+  background-color: #fcb045;
+}
+.resume {
+  background-color: #b6fc5b;
+}
+.reset {
+  background-color: #ff4e50;
+}
+
+.start:hover {
+  background-color: #2193b0;
+}
+.pause:hover {
+  background-color: #f7971e;
+}
+.resume:hover {
+  background-color: #a3eb34;
+}
+.reset:hover {
+  background-color: #ff416c;
+}
+
+/* Time's Up Display */
+.timesup {
+  font-size: 2rem;
+  font-style: italic;
+  color: #fff;
+  margin-top: 20px;
+  padding: 15px;
+  background: rgba(255, 0, 0, 0.5);
+  border-radius: 15px;
+  font-weight: bold;
+  text-shadow: 1px 1px 2px black;
+}
+
+/* Responsive Design */
+@media (max-width: 600px) {
+  .head {
+    font-size: 2rem;
+  }
+
+  input[type=number] {
+    width: 50px;
+    height: 45px;
+    font-size: 1.2rem;
+  }
+
+  .cdays, .chours, .cminutes, .cseconds {
+    font-size: 1.5rem;
+    padding: 10px 15px;
+  }
+
+  button {
+    font-size: 1rem;
+    padding: 8px 18px;
+  }
+
+  .timesup {
+    font-size: 1.4rem;
+  }
+}
+.timesup {
+  margin-top: 20px;
+  padding: 25px 30px;
+  border-radius: 15px;
+  font-size: 2rem;
+  font-weight: bold;
+  color: white;
+  background: linear-gradient(135deg, #ff416c, #ff4b2b);
+  text-shadow: 2px 2px 4px black;
+  box-shadow: 0 0 15px #ff4b2b;
+  animation: glow 1.5s infinite alternate, shake 0.5s infinite;
+  backdrop-filter: blur(8px);
+  transition: all 0.3s ease-in-out;
+}
+
+@keyframes glow {
+  0% {
+    box-shadow: 0 0 10px #ff416c;
+    transform: scale(1);
+  }
+  100% {
+    box-shadow: 0 0 30px #ff4b2b;
+    transform: scale(1.05);
+  }
+}
+
+@keyframes shake {
+  0%, 100% { transform: translateX(0); }
+  25% { transform: translateX(-3px); }
+  50% { transform: translateX(3px); }
+  75% { transform: translateX(-2px); }
+}
