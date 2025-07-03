@@ -1,0 +1,14 @@
+
+.container{
+  
+    height:fit-content;
+    width: fit-content;
+background-image:radial-gradient(rgb(248, 103, 217),rgba(255, 98, 185, 0.438));
+border-radius: 20px;
+
+}
+
+.container:hover{
+    background-image:radial-gradient(rgba(250, 82, 214, 0.568),rgba(253, 54, 164, 0.644));
+
+}

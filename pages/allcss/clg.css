@@ -1,0 +1,9 @@
+
+.formclg{
+    border: 5px solid rgba(206, 99, 248, 0.568);
+    height:700px;
+    width: 450px;
+ background-image: linear-gradient(rgba(241, 79, 187, 0.651),rgba(74, 74, 241, 0.685));
+border-radius: 20px;
+
+}

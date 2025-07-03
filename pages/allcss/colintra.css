@@ -1,0 +1,35 @@
+.part1{
+    background-image: linear-gradient(rgb(184, 87, 240),rgb(253, 73, 199));
+    color: black;
+    padding: 20px;
+    border-radius: 20px ;
+    font-family:monospace;
+ margin-top: 100px;
+    font-weight: bolder;
+
+}
+.term{
+    margin-top:80px;
+background-color: black;
+color: white;
+padding-top:5px;
+
+}
+.head{
+    background-color: rgb(31, 30, 29);
+    color: rgb(95, 243, 51);
+    font-family: fantasy;
+    padding: 10px;
+    text-align: center;
+
+}
+.write1{
+    font-family:  Geneva;
+font-weight: 800;
+font-size: x-large;
+}
+.write2{
+    font-family: Geneva;
+    font-weight: 500;
+    font-size: large;
+}
