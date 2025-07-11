@@ -1,9 +1,9 @@
 import React from 'react';
 import Carousel from 'react-bootstrap/Carousel';
-import deletefile from 'C:/Users/acer/Desktop/secure share gov doc web/deletefile.jpg';
-import safe from 'C:/Users/acer/Desktop/secure share gov doc web/safe.jpg';
-import share from 'C:/Users/acer/Desktop/secure share gov doc web/share.jpg';
-import upload from 'C:/Users/acer/Desktop/secure share gov doc web/upload.jpg';
+import deletefile from 'C:/Users/acer/Desktop/secure share gov doc web/vite-project/deletefile.jpg';
+import safe from 'C:/Users/acer/Desktop/secure share gov doc web/vite-project/safe.jpg';
+import share from 'C:/Users/acer/Desktop/secure share gov doc web/vite-project/share.jpg';
+import upload from 'C:/Users/acer/Desktop/secure share gov doc web/vite-project/upload.jpg';
 
 const ImageCarousel = () => {
   return (
@@ -51,7 +51,7 @@ const ImageCarousel = () => {
         <Carousel.Caption>
           <h3>Uplad</h3>
           <p>
-          ?Upload ur document and keep safe 
+          Upload ur document and keep safe 
           </p>
         </Carousel.Caption>
       </Carousel.Item>
