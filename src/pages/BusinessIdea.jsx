@@ -3,8 +3,8 @@ import React ,{useState}from 'react'
 import { Link } from 'react-router-dom'
 import { useNavigate } from 'react-router-dom'
 import "../allcss/businessman.css"
-import post from "C:/Users/acer/Desktop/BBI.WEB/postbusinessidea.jpg"
-import view from "C:/Users/acer/Desktop/BBI.WEB/view.jpg"
+import post from "C:/Users/acer/Desktop/BBI.WEB/vite-project/postbusinessidea.jpg"
+import view from "C:/Users/acer/Desktop/BBI.WEB/vite-project/view.jpg"
 import Offcanvas from 'react-bootstrap/Offcanvas';
 import Backpage from "./Backpage";
 import Button from 'react-bootstrap/Button';

@@ -5,11 +5,11 @@ const mongoose = require('mongoose');
 const cors = require('cors');
 
 // Create separate Mongoose instances for each database connection
-const profasolDB = mongoose.createConnection('mongodb://localhost:27017/profasol', { useNewUrlParser: true, useUnifiedTopology: true });
-const advisorDB = mongoose.createConnection('mongodb://localhost:27017/advisor', { useNewUrlParser: true, useUnifiedTopology: true });
-const investoreDB = mongoose.createConnection('mongodb://localhost:27017/investore',{useNewUrlParser:true,useUnifiedTopology:true});
-const userDB = mongoose.createConnection('mongodb://localhost:27017/user',{useNewUrlParser:true,useUnifiedTopology:true})
-const bankerDB =mongoose.createConnection('mongodb://localhost:27017/banker',{useNewUrlParser:true,useUnifiedTopology:true})
+const profasolDB = mongoose.createConnection('mongodb://localhost:27017/profasol', );
+const advisorDB = mongoose.createConnection('mongodb://localhost:27017/advisor', );
+const investoreDB = mongoose.createConnection('mongodb://localhost:27017/investore',);
+const userDB = mongoose.createConnection('mongodb://localhost:27017/user',)
+const bankerDB =mongoose.createConnection('mongodb://localhost:27017/banker',)
 // Define the schema for the profasol entries
 const profasolSchema = new mongoose.Schema({
   userId: String,
