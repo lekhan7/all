@@ -1,8 +1,8 @@
 import Carousel from 'react-bootstrap/Carousel';
-import qu3 from "C:/Users/acer/Desktop/sporld web/qute 3.jpg"
-import qu2 from "C:/Users/acer/Desktop/sporld web/qu 2.jpg"
-import qu1 from "C:/Users/acer/Desktop/sporld web/qut 1.jpg"
-import qu4 from "C:/Users/acer/Desktop/sporld web/qute 4.jpg"
+import qu3 from "C:/Users/acer/Desktop/sporld web/vite-project/qute 3.jpg"
+import qu2 from "C:/Users/acer/Desktop/sporld web/vite-project/qu 2.jpg"
+import qu1 from "C:/Users/acer/Desktop/sporld web/vite-project/qut 1.jpg"
+import qu4 from "C:/Users/acer/Desktop/sporld web/vite-project/qute 4.jpg"
 function ImageCarousel(params) {
     
 

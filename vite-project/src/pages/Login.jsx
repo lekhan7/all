@@ -17,12 +17,7 @@ function Login() {
   }, [firebase, navigate]);
 
   const handelsubmit = async (e) => {
-    e.preventDefault();
-    alert("login a user");
-    const result = await firebase.signInUserWithEmailAndPassword(email, password);
-    alert("done", result);
-
-    // Check if the logged-in user is an admin
+    
     if (email === "lekhankt3@gmail.com" && password === "123456") {
       navigate("/home");
     } else {
@@ -40,9 +35,9 @@ function Login() {
 
     // Check if the logged-in user is an admin
     if (result.user.email === "lekhankt3@gmail.com") {
-      navigate("/admin-home");
+      navigate("/home");
     } else {
-      navigate("/user-home");
+      navigate("/user");
     }
   };
 
