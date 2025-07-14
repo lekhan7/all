@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { Link, useNavigate } from 'react-router-dom';
-import Backbtn from "C:/Users/acer/Desktop/CARE GUIDE/vite-project/pages/Backbtn.jsx";
+import Backbtn from "./Backbtn.jsx";
 function Collageoptimise({ start, ...props }) {
   const navigate = useNavigate();
   const [collage, setCollage] = useState([]);

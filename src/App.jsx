@@ -10,7 +10,7 @@ import Login from '../pages/Login';
 import Load from '../pages/Load.jsx';
 import Resume from '../pages/Resume.jsx';
 
-import Collage from '../pages/collage.jsx';
+import Collage from '../pages/Collage.jsx';
 import ApptitudeTest from '../pages/ApptitudeTest.jsx';
 import CollageDetails from '../pages/CollageDetails.jsx';
 import Collageinterface from '../pages/Collageinterface.jsx';

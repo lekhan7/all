@@ -3,9 +3,9 @@ import { useNavigate } from 'react-router-dom';
 import Form from 'react-bootstrap/Form';
 import "bootstrap/dist/css/bootstrap.min.css";
 import FloatingLabel from 'react-bootstrap/FloatingLabel';
-import { Button } from 'bootstrap';
+
 import { useFirebase } from '../context/firebase';
-import Backbtn from "C:/Users/acer/Desktop/CARE GUIDE/vite-project/pages/Backbtn.jsx";
+import Backbtn from "./Backbtn.jsx";
 import "./allcss/register.css"
 function Register() {
     const [email, setEmail] = useState('');

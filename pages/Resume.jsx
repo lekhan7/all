@@ -7,7 +7,7 @@ import { FaCheckDouble } from "react-icons/fa";
 import { FaCloudDownloadAlt } from "react-icons/fa";
 import { FaClosedCaptioning } from "react-icons/fa";
 import { useNavigate } from 'react-router-dom';
-import Backbtn from "C:/Users/acer/Desktop/CARE GUIDE/vite-project/pages/Backbtn.jsx";
+import Backbtn from "./Backbtn.jsx";
 function Resume() {
 const navigate= useNavigate()
   const handelchose =()=>{

@@ -1,7 +1,7 @@
 import React, { useState,useEffect } from 'react'
 import "./allcss/collagedetails.css"
 import { useNavigate } from 'react-router-dom';
-import Backbtn from "C:/Users/acer/Desktop/CARE GUIDE/vite-project/pages/Backbtn.jsx";
+import Backbtn from "./Backbtn.jsx";
 function Appliedstudent() {
     const navigate = useNavigate();
     const [studentapp,setStudentapp]=useState([])

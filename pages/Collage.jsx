@@ -6,7 +6,7 @@ import Button from 'react-bootstrap/Button';
 import Offcanvas from 'react-bootstrap/Offcanvas';
 import Form from 'react-bootstrap/Form'
 import { useNavigate } from 'react-router-dom';
-import Backbtn from "C:/Users/acer/Desktop/CARE GUIDE/vite-project/pages/Backbtn.jsx";
+import Backbtn from "./Backbtn.jsx";
 import "./allcss/clg.css"
 function Collage() {
    const navigate = useNavigate();

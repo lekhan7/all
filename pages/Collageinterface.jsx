@@ -1,7 +1,7 @@
 import React from 'react'
 import "./allcss/colintra.css"
-import Backbtn from "C:/Users/acer/Desktop/CARE GUIDE/vite-project/pages/Backbtn.jsx";
-// import"C:/Users/acer/Desktop/CARE GUIDE/usaclg.jpg"
+
+
 import { Link, useNavigate } from 'react-router-dom'
 import "./allcss/interface.css"
 function Collageinterface() {
