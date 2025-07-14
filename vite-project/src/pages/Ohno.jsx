@@ -1,6 +1,6 @@
 import React, { useEffect } from 'react';
 import { useNavigate } from 'react-router-dom';
-import { useFirebase } from 'C:/Users/acer/Desktop/sporld web/vite-project/context/firebase.jsx';
+import { useFirebase } from '../../context/firebase';
 
 function OhNo() {
   const firebase = useFirebase();

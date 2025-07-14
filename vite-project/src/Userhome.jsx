@@ -1,7 +1,7 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
 import ImageCarousel from './pages/Imagecoursel'
-import "C:/Users/acer/Desktop/sporld web/vite-project/src/pages/allcss/user.css"
+import "../src/pages/allcss/user.css"
 function Userhome() {
   return (
     <> 

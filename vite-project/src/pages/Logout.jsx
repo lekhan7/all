@@ -1,4 +1,4 @@
-import logout from 'C:/Users/acer/Desktop/sporld web/vite-project/logout.jpg'
+import logout from '../container/logout.jpg'
 import { useNavigate, useLocation } from 'react-router-dom';
 import { useFirebase } from "../../context/firebase";
 import { Link} from 'react-router-dom';

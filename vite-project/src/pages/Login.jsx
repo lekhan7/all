@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import Button from 'react-bootstrap/Button';
 import Form from 'react-bootstrap/Form';
-import { useFirebase } from 'C:/Users/acer/Desktop/sporld web/vite-project/context/firebase.jsx';
+import { useFirebase } from '../../context/firebase.jsx';
 import { useNavigate } from 'react-router-dom';
 
 function Login() {

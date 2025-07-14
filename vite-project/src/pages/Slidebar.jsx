@@ -1,8 +1,8 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
 import "./allcss/slide.css"
-import home from 'C:/Users/acer/Desktop/sporld web/vite-project/home.jpg'
-import logout from 'C:/Users/acer/Desktop/sporld web/vite-project/logout.jpg'
+import home from '../container/home.jpg'
+import logout from '../container/logout.jpg'
 import { useNavigate } from 'react-router-dom';
 import { useFirebase } from "/context/firebase";
 function Slidebar() {

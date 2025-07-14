@@ -1,20 +1,20 @@
 import Carousel from 'react-bootstrap/Carousel';
-import qu3 from "C:/Users/acer/Desktop/sporld web/vite-project/qute 3.jpg"
-import qu2 from "C:/Users/acer/Desktop/sporld web/vite-project/qu 2.jpg"
-import qu1 from "C:/Users/acer/Desktop/sporld web/vite-project/qut 1.jpg"
-import qu4 from "C:/Users/acer/Desktop/sporld web/vite-project/qute 4.jpg"
+import qute3 from "../container/qute 3.jpg"
+import qu2 from "../container/qu 2.jpg"
+import qut1 from "../container/qut 1.jpg"
+import qute4 from "../container/qute 4.jpg"
 function ImageCarousel(params) {
     
 
 return(
 <Carousel fade>
       <Carousel.Item>
-        <img className="d-block w-100" src={qu1} />
+        <img className="d-block w-100" src={qut1} />
         <Carousel.Caption>
            </Carousel.Caption>
       </Carousel.Item>
       <Carousel.Item>
-      <img className="d-block w-100" src={qu3} />
+      <img className="d-block w-100" src={qute3} />
         <Carousel.Caption>
           </Carousel.Caption>
       </Carousel.Item>
@@ -25,7 +25,7 @@ return(
         </Carousel.Caption>
       </Carousel.Item>
       <Carousel.Item>
-        <img className="d-block w-100" src={qu4} />
+        <img className="d-block w-100" src={qute4} />
         <Carousel.Caption>
            </Carousel.Caption>
       </Carousel.Item>
