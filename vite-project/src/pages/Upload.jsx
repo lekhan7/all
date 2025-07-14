@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import "C:/Users/acer/Desktop/secure share gov doc web/vite-project/src/allcss/upload.css"
+import "../allcss/upload.css"
 const App = () => {
   const [id, setId] = useState("");
   const [type, setType] = useState("");

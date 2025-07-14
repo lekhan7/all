@@ -1,9 +1,9 @@
 import React, { useState, useEffect } from "react";
-import email from "C:/Users/acer/Desktop/secure share gov doc web/vite-project/email.jpg"
-import facebook from "C:/Users/acer/Desktop/secure share gov doc web/vite-project/facebook.jpg"
-import wats from "C:/Users/acer/Desktop/secure share gov doc web/vite-project/wats.jpg"
-import tewwet from "C:/Users/acer/Desktop/secure share gov doc web/vite-project/tewwet.jpg"
-import "C:/Users/acer/Desktop/secure share gov doc web/vite-project/src/allcss/share.css"
+import email from "../container/email.jpg"
+import facebook from "../container/facebook.jpg"
+import wats from "../container/wats.jpg"
+import tewwet from "../container/tewwet.jpg"
+import "../allcss/share.css"
 const Share = () => {
   const [uploadedDocuments, setUploadedDocuments] = useState([]);
   const [selectedDocument, setSelectedDocument] = useState(null);

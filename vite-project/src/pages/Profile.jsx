@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 import { useNavigate } from 'react-router-dom';
 import { useFirebase } from "../context/firebase";
-import "C:/Users/acer/Desktop/secure share gov doc web/vite-project//src/allcss/profile.css"
+import "../allcss/profile.css"
 const ProfilePage = () => {
   const [email, setEmail] = useState(() => {
     const savedData = localStorage.getItem("profileData");

@@ -1,9 +1,9 @@
 import React from 'react';
 import Carousel from 'react-bootstrap/Carousel';
-import deletefile from 'C:/Users/acer/Desktop/secure share gov doc web/vite-project/deletefile.jpg';
-import safe from 'C:/Users/acer/Desktop/secure share gov doc web/vite-project/safe.jpg';
-import share from 'C:/Users/acer/Desktop/secure share gov doc web/vite-project/share.jpg';
-import upload from 'C:/Users/acer/Desktop/secure share gov doc web/vite-project/upload.jpg';
+import deletefile from '../container/deletefile.jpg';
+import safe from '../container/safe.jpg';
+import share from '../container/share.jpg';
+import upload from '../container/upload.jpg';
 
 const ImageCarousel = () => {
   return (
