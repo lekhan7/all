@@ -1,8 +1,8 @@
 import React from 'react';
 import { Link, useNavigate } from 'react-router-dom';
 import "../allcss/slide.css";
-import home from 'C:/Users/acer/Desktop/sporld web/vite-project/home.jpg';
-import logout from 'C:/Users/acer/Desktop/sporld web/vite-project/logout.jpg';
+import home from '../containers/home.jpg';
+import logout from '../containers/logout.jpg';
 import { useFirebase } from "/context/firebase";
 
 function Backpage() {
