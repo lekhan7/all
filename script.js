@@ -1,17 +1,29 @@
 const slide = document.querySelector('.carousel-slide');
-const totalImages = slide.children.length;
+const images = document.querySelectorAll('.carousel-slide img');
 let currentIndex = 0;
 
-function showImage(index) {
-  slide.style.transform = `translateX(-${index * 600}px)`;
+function updateSlidePosition() {
+  const width = document.querySelector('.carousel-container').offsetWidth;
+  slide.style.transform = `translateX(-${currentIndex * width}px)`;
 }
 
 document.querySelector('.next').addEventListener('click', () => {
-  currentIndex = (currentIndex + 1) % totalImages;
-  showImage(currentIndex);
+  if (currentIndex < images.length - 1) {
+    currentIndex++;
+  } else {
+    currentIndex = 0;
+  }
+  updateSlidePosition();
 });
 
 document.querySelector('.prev').addEventListener('click', () => {
-  currentIndex = (currentIndex - 1 + totalImages) % totalImages;
-  showImage(currentIndex);
+  if (currentIndex > 0) {
+    currentIndex--;
+  } else {
+    currentIndex = images.length - 1;
+  }
+  updateSlidePosition();
 });
+
+window.addEventListener('resize', updateSlidePosition);
+window.addEventListener('load', updateSlidePosition);
